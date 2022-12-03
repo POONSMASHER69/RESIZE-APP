@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Resizer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="animated fadeInDown">Image Resizer</h1>
+    <input type="file" id="file" class="animated fadeInUp" />
+    <input type="number" id="width" placeholder="Width" class="animated fadeInUp" />
+    <input type="number" id="height" placeholder="Height" class="animated fadeInUp" />
+    <button onclick="resize()" class="animated fadeInUp">Resize!</button>
+    <div class="preview">
+      <img id="preview" class="animated fadeIn" />
+    </div>
+    <a id="download" download="resized.png" class="animated fadeInUp">
+      <button>Download</button>
+    </a>
+  </div>
+  <script src="resize.js"></script>
+</body>
+</html>
